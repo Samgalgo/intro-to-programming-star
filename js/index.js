@@ -13,7 +13,7 @@ const copyright = document.createElement("p");
 //Set the inner HTML of your copyright element to display your name and the current year
 //hint: use thisYear variable from earlier
 
-copyright.innerHTML = `<p> azul &copy;<p> ${thisYear}`;
+copyright.innerHTML = `<p> Samantha Galindo &copy;<p> ${thisYear}`;
 
 //Using "DOM Manipulation", append the copyright element to the footer
 //hint: appendChild method
@@ -39,3 +39,84 @@ skillsList = skillsSection.querySelector("ul");
     skill.innerText = skills[i]
     skillsList.appendChild(skill);
  };
+
+
+ const messageForm = document.querySelector('[name="leave_message"]');
+   messageForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const names = e.target.name.value;
+      const emails = e.target.email.value;
+      const messagesInput = e.target.message.value;
+      console.log(names, emails, messagesInput);
+     
+
+
+      const messageSection = document.getElementById("messages");
+      const messageList = messageSection.querySelector("ul");
+      //console.log(messageList);
+      const newMessage = document.createElement("li");
+      messageList.appendChild(newMessage);
+      newMessage.innerHTML=  ` <a href=mailto:${emails}> ${names} </a> wrote: ${messagesInput}`;
+      //newMessage.textContent=messagesInput;
+      console.log(newMessage);
+      //newMessage.textContent= `<a href=mailto:${emails}> ${names} </a>` 
+     
+      
+//NEEDS MORE WORK, CANNOT SET THE NEWMESSAGE TO THE CONST EMAIL/NAME ALL IN ONE LINK
+      //const messageLink = document.createElement('a')
+      //newMessage.appendChild(messageLink)
+      //messageLink.href =  email
+      //messageLink.innerText = names
+      
+
+     
+      // per mentor
+      /*const messageLink = document.createElement('a')
+      messageLink.href = "mailto:" + email
+      messageLink.innerText = "name"
+      newMessage.appendChild(messageLink)*/
+
+      
+      //newMessage.innerHTML=<p> newMessage </p>
+      //`<a href=mailto:${emails}> ${names} </a>`  
+      
+
+//BUTTON IS NO REMOVING ITEMS
+      const removeButton = document.createElement("button");
+      removeButton.textContent= "Remove";
+      console.log(removeButton);
+      removeButton.type = "button";
+      newMessage.appendChild(removeButton);
+      
+      removeButton.addEventListener("click", () => {
+
+         const entry = removeButton.parentNode;
+         entry.remove();
+        
+      });
+
+      messageList.appendChild(newMessage);
+      //console.log(newMessage.innerHTML="<a href='mailto: + email + " '>" + names + "</a> wrote<span>message</span>"
+      
+   document.querySelector('[name="leave_message"]').reset()   
+
+   });
+
+   
+  
+   /* Stretch Goals
+These tasks are entirely optional, but if you'd like a challenge then do your best to complete each item.
+
+ (Optional) Hide the #messages section when the list is empty
+ (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message*/
+
+   
+ 
+
+   
+   
+
+  //function resetValues() {
+   //document.querySelector('[name="leave_message"]').reset()
+  // }
+ //resetValues()
