@@ -23,8 +23,8 @@ footer.appendChild(copyright);
 //Open your index.js file
 //List your technical skills by creating an Array of String values and store it in a variable named skills
 
-const skills = ["Decent knowldege on common operating systems: Apple MacOS, Chrome OS, Windows", 
-"Computer programs and Software: G Suite, Zoom, Slack, Trello, GitHub", "Project planning: Meeting Facilitating", "Technical Support"];
+const skills = ["Operating systems: Apple MacOS, Chrome OS, Windows", 
+"GitHub", "HTML", "JavaScript", "CSS"];
 //Using "DOM Selection", select the #skills section by id and store it in a variable named skillsSection
 //hint: querySelector or getElementById method
 skillsSection = document.getElementById("skills");
@@ -56,7 +56,7 @@ skillsList = skillsSection.querySelector("ul");
       //console.log(messageList);
       const newMessage = document.createElement("li");
       messageList.appendChild(newMessage);
-      newMessage.innerHTML=  ` <a href=mailto:${emails}> ${names} </a> wrote: ${messagesInput}`;
+      newMessage.innerHTML=  ` <a href=mailto:${emails}> ${names} </a> wrote :  ${messagesInput}`; 
       //newMessage.textContent=messagesInput;
       console.log(newMessage);
       //newMessage.textContent= `<a href=mailto:${emails}> ${names} </a>` 
@@ -68,13 +68,6 @@ skillsList = skillsSection.querySelector("ul");
       //messageLink.href =  email
       //messageLink.innerText = names
       
-
-     
-      // per mentor
-      /*const messageLink = document.createElement('a')
-      messageLink.href = "mailto:" + email
-      messageLink.innerText = "name"
-      newMessage.appendChild(messageLink)*/
 
       
       //newMessage.innerHTML=<p> newMessage </p>
