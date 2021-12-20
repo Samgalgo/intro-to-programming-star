@@ -12,6 +12,7 @@
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(https://media.giphy.com/media/JoVV55m3KZHdxlpFZ6/giphy.gif);
+    /* background-image: url('../ndgns.png'); */
     background-size: cover;
     background-color: rgba(34, 42, 131, 0.8);
     background-blend-mode: multiply;
@@ -22,7 +23,8 @@
     
  }
 
- 
+ /* background-image: url(intro-to-programming-star/ndgns.png);
+ //set another backgroud in case the giphy image disapears// */
 
 .header {
     display: flex;
@@ -34,13 +36,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
    
-    }
+ }
 
  .photo-rounded{
      display:flex;
     flex-direction: column;
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     border-radius: 80px;
     border-style: double;
     background-color: greenyellow;
@@ -56,6 +58,7 @@
      margin: 20px;
      padding: 5px;
      font-weight: 700;
+     align-items: center;
      
  }
 
@@ -66,14 +69,21 @@
     border-style:double;
     border-radius: 80px;
     list-style: none;
-    
+    text-transform: uppercase;
+    font-size: 20;
  }
 
  .button-about:hover{
-    background-color: rgb(238, 131, 149);
-    color:white;
+    color:rgb(255, 255, 255);
+    background-color: rgb(240, 204, 210);
+    
     
  }
+
+.menuStyle {
+    text-decoration: none;
+ }
+
 
 
 
@@ -87,17 +97,25 @@
     font-size: 45px;
     font-weight: 700px;
     text-shadow: -2px 1px 7px rgb(238 131 149);
+    text-transform: uppercase;
+ }
+
+ .menuDecoration{
+     background-color: cornflowerblue;
+     border-radius: 30px;
  }
 
  .about-style{
     margin-top: 80px;
-}
+ }
 
 .other-headers {
     display: flex;
     justify-content: center;
     color: greenyellow;
     padding: 20px; 
+    text-transform: uppercase;
+    font-size: 28px;
 }
 
 .about-paragraph{
@@ -142,9 +160,39 @@
     
 }
 
+.mySkills{
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
 .list-styles{
     list-style:none;
- }
+}
+
+
+.project-decoration{
+    color:white;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+
+.projectos{
+    
+    list-style-type:decimal;
+    margin: 10px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-family:monospace;
+    color: white;
+}
+
+
+
+
+
+
+            
 
 
  .ul-connect{
@@ -210,6 +258,14 @@
    
 }
 
+.messageArrived{
+    font-style: oblique;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .section2{
     margin: 10px;
     text-align:center;
@@ -229,6 +285,14 @@
       margin:5px;
   }
 
+
+.buttonRemove{
+    background-color:rgb(238, 131, 149);
+    border-radius: 18px;
+    padding:5px;
+
+    
+}
 
       
 .footerInfo{

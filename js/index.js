@@ -37,6 +37,7 @@ skillsList = skillsSection.querySelector("ul");
     skill = document.createElement("li");
     skill.innerText = skills[i]
     skillsList.appendChild(skill);
+    skill.className="mySkills"
  };
 
 
@@ -56,6 +57,7 @@ skillsList = skillsSection.querySelector("ul");
       const newMessage = document.createElement("li");
       messageList.appendChild(newMessage);
       newMessage.innerHTML=  ` <a href=mailto:${emails} >     ${names} </a> wrote:  ${messagesInput}`; 
+      newMessage.className="messageArrived";
       //newMessage.textContent=messagesInput;
       console.log(newMessage);
       //newMessage.textContent= `<a href=mailto:${emails}> ${names} </a>` 
@@ -79,7 +81,8 @@ skillsList = skillsSection.querySelector("ul");
       console.log(removeButton);
       removeButton.type = "button";
       newMessage.appendChild(removeButton);
-      
+      removeButton.className="buttonRemove"
+
       removeButton.addEventListener("click", () => {
 
          const entry = removeButton.parentNode;
@@ -102,13 +105,39 @@ These tasks are entirely optional, but if you'd like a challenge then do your be
  (Optional) Hide the #messages section when the list is empty
  (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message*/
 
-   
- 
-
-   
-   
-
   //function resetValues() {
    //document.querySelector('[name="leave_message"]').reset()
   // }
  //resetValues()
+
+
+//  Create a new XMLHttpRequest object and store it in a variable named githubRequest, add Project section
+const githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/Samgalgo/repos");
+githubRequest.send();
+
+githubRequest.addEventListener('load', (event) => {
+   console.log('page is fully loaded');
+   const responses = JSON.parse(githubRequest.responseText);
+   const projectSection = document.getElementById("projects");
+   const projectList = projectSection.querySelector("ul");
+  
+   for (let i = 0; i < responses.length; i++) {
+     console.log(responses[i]);
+     project = document.createElement("li");
+     project.className="projectos";
+     project.innerText = responses[i].name;
+     projectList.appendChild(project);
+   }
+
+
+ });
+
+
+//How to link my GITHUB PROJECT NAMES TO THEIR RESPECTIVE URLs
+// for (let i = 0; i < responses.length; i++) {
+//    console.log(responses[i]);
+//    projectLink = document.createElement("a");
+//    projectLink.className="projectosLink";
+//    projectLink.innerText = responses[i].html_url;
+//  }

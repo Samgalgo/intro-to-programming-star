@@ -18,11 +18,15 @@
         <!--TOP NAVIGATION SECTION -->
         <ul class="top-navigation-container">
             
-           <li class="menu button-about"> <a  href="#about"> About </a> </li>
-           <li class="menu button-about"> <a href="#experience"> Experience</a> </li>
-           <li class="menu button-about"> <a href="#connect"> Connect</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#about"> About </a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#experience"> Experience</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#projects"> Projects</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#connect"> Connect</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="blog.html"> Blog</a> </li>
            
         </ul>
+
+        <!-- <hr class=line> Not adding it as it breaks the smoothness of the image-->
 
         <!--ABOUT SECTION -->
         <section id="about" class="sections"> 
@@ -45,7 +49,7 @@
                 <li class="experience-items item1 items experience-date">Sept 2018 -  Mar 2020</li></li>
                 <li class= "experience-items item2 items">Digital Visual NoteTaker Freelancer 
                 <li class="experience-items item2 items experience-date">Jan 2019 - Present</li></li>
-                <li class="experience-items item3 items">Technology Director Assistant atMaureen Joy Charter School 
+                <li class="experience-items item3 items">Technology Director Assistant at Maureen Joy Charter School 
                 <li class="experience-items item3 items experience-date">Mar 2020 -  Present</li></li>
             </ul>
             
@@ -55,6 +59,19 @@
             <h2 class="other-headers skills-spacing">Skills</h2>
             <ul class="ul list-styles content skills-container"> </ul>
         </section>
+
+        <!--PROJECTS SECTION -->
+        <section id="projects">
+            <h2 class="other-headers"> Projects </h2>
+            <ul class="project-decoration">
+                
+            </ul>
+        </section>
+
+
+        <!-- <script>
+            document.getElementsByClassName("projectos").innerHTML = `<a href=${projectLink}> ${project} </a>`;
+        </script> -->
 
              
         <!--CONNECT SECTION -->
@@ -73,9 +90,9 @@
             <h2 class="title-leavemessage h2LAM">Leave a Message ☺</h2> 
             <form class="form" name="leave_message">   
             <label class="label-msg" for="label_name"> Name</label> <br>
-            <input class="input-msg" type="text" id="label_name" name="name" required="true"> <br>
+            <input class="input-msg" type="text" id="label_name" name="name" required="true" placeholder="Name"> <br>
             <label class="label-msg" for='label_email'> Email Address</label> <br>
-            <input class="input-msg" type="email" id="label_email" name="email" required="true"> <br>
+            <input class="input-msg" type="email" id="label_email" name="email" required="true" placeholder="Email"> <br>
             <label class="label-msg" for="message_area"> Message</label> <br>
             <textarea class="input-msg" id="message_area" name="message" required="true"> </textarea> <br>
             <button class="btn" type="submit">Submit</button><br>
@@ -89,6 +106,8 @@
 
             </ul>
         </section>
+
+    
 
     <footer class="footer-flex footerInfo">
         
