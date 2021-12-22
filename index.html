@@ -11,8 +11,10 @@
 
         <!--MAIN TITLE PHOTO DIV SECTION -->
     <body class="body">
-        <header class="header"><h1 class="main-title">   Samantha Galindo </h1> <div><img class="photo-rounded" src="sea.png" alt="Author 
-            smiling haviing the sea in the background"  height="400px" title="Sam"></div></header>
+        <div class="container-header">  <header class="header"><h1 class="main-title">   Samantha Galindo </h1> <div><img class="photo-rounded" src="sea.png" alt="Author 
+            smiling haviing the sea in the background"  height="400px" title="Sam"></div></header></div>
+        <!-- <header class="header"><h1 class="main-title">   Samantha Galindo </h1> <div><img class="photo-rounded" src="sea.png" alt="Author 
+            smiling haviing the sea in the background"  height="400px" title="Sam"></div></header> -->
 
 
         <!--TOP NAVIGATION SECTION -->
@@ -20,9 +22,10 @@
             
            <li class="menu button-about"> <a class="menuStyle" href="#about"> About </a> </li>
            <li class="menu button-about"> <a class="menuStyle" href="#experience"> Experience</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#skills"> Skills</a> </li>
            <li class="menu button-about"> <a class="menuStyle" href="#projects"> Projects</a> </li>
-           <li class="menu button-about"> <a class="menuStyle" href="#connect"> Connect</a> </li>
-           <li class="menu button-about"> <a class="menuStyle" href="blog.html"> Blog</a> </li>
+           <li class="menu button-about"> <a class="menuStyle" href="#messages"> Leave a Msg</a> </li>
+          
            
         </ul>
 
@@ -33,9 +36,9 @@
             <h1 class="other-headers about-style">About</h1> 
         </section>
             <ul class="ul content"><p class="p about-paragraph">Hi there! My name is Samantha Galindo, I am a developer living in North Carolina. 
-                    I am the parent of a 5 year old kid and a fierce chihuahua. I love dancing, making art, going on hikes, reading books and spending time with family and friends.
-                    I work at a school as the Tecnology Director Assitant. I am in charge of helping facilitate access to devices and educational
-                    platforms to students, teachers and parents. I am passionate about learning new things, self-improvement and my community.</p></ul>
+                    I am the parent of an amazing 6 year old kid and a dramatic chihuahua. I love dancing, making art, going on hikes, and spending time with family and friends.
+                    I work at an Elementary and Middle School as the Tecnology Director Assitant, I am in charge of helping facilitate access to devices and educational
+                    platforms for students, teachers and parents. I am passionate about learning new things, personal development and my community.</p></ul>
                     
             
             
@@ -62,9 +65,9 @@
 
         <!--PROJECTS SECTION -->
         <section id="projects">
-            <h2 class="other-headers"> Projects </h2>
-            <ul class="project-decoration">
-                
+            <h2 class="other-headers projTitle"> Projects </h2>
+            <ul class="containerProjects">
+    
             </ul>
         </section>
 
@@ -74,34 +77,29 @@
         </script> -->
 
              
-        <!--CONNECT SECTION -->
-        <section id="connect" class="sections"> 
-            <h1 class="other-headers connectTitle">Connect</h1> 
-        </section>
-        <ul class="ul-connect content">
-            <p class="mediaConnect"> <strong class="color-strong">Email</strong> bluesundaysg@gmail.com </p>
-            <p class="mediaConnect">   <strong class="color-strong">GitHub</strong>Samgalgo  </p>
-            <p class="mediaConnect">  <strong class="color-strong">Discord</strong> ometesol#1116  </p>
-            <p class="mediaConnect">   <strong class="color-strong">IG</strong> azulbatallas</p> 
-        </ul>
+        
 
         <!--LEAVE MESSAGE SECTION -->
-        <section class="message-section section1 mensajes"> 
-            <h2 class="title-leavemessage h2LAM">Leave a Message ☺</h2> 
+        <!-- <h2 class="other-headers">Leave a Message ☺</h2>  -->
+        <section class="msgContainer"> 
+        <div class="secondContainer">
+            <!-- <h2>Leave a Message ☺</h2>  -->
+            <h2>Leave a Message ☺</h2> 
             <form class="form" name="leave_message">   
             <label class="label-msg" for="label_name"> Name</label> <br>
             <input class="input-msg" type="text" id="label_name" name="name" required="true" placeholder="Name"> <br>
             <label class="label-msg" for='label_email'> Email Address</label> <br>
             <input class="input-msg" type="email" id="label_email" name="email" required="true" placeholder="Email"> <br>
             <label class="label-msg" for="message_area"> Message</label> <br>
-            <textarea class="input-msg" id="message_area" name="message" required="true"> </textarea> <br>
+            <textarea class="textArea" id="message_area" name="message" required="true" placeholder="Your lovely message"> </textarea> <br>
             <button class="btn" type="submit">Submit</button><br>
             </form>
+        </div>
         </section>
 
         <!--MESSAGE DROP SECTION -->
-        <section id="messages" class="message-section newMsg section2 ">
-            <h2 class="title-leavemessage comingMsg" >Messages ✉︎</h2>
+        <section id="messages" class="msgContainer">
+            <h2 >Messages ✉︎</h2>
             <ul class="listMsg">
 
             </ul>
@@ -110,14 +108,27 @@
     
 
     <footer class="footer-flex footerInfo">
+
+        <div class="gitContainer">
+            <a href="https://github.com/Samgalgo" target="_blank"> <ion-icon class="ion-icon" size="large" name="logo-github"></ion-icon></a> 
+            
+        </div>
+        <div class="gitContainer"> 
+            <a href="https://www.instagram.com/azulbatallas/" target="_blank"> <ion-icon class="ion-icon" size="large" name="logo-instagram"></ion-icon></a> 
+        </div>
+        <div class="gitContainer">
+            <a href="https://www.linkedin.com/in/samantha-gal-gomez-002140228/" target="_blank"> <ion-icon class="ion-icon" size="large" name="logo-linkedin"></ion-icon></a> 
+        </div>
+       
+        
         
     </footer>
     <!--JS SECTION -->
-    <script src="js/index.js" > </script>    
+    <script src="js/index.js" > </script> 
+    <!-- Link for insta logo -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
     </body>
-    
-    <!--<navigation>
-        <h5>&copy; </h5></navigation>-->
     
    
 </html>

@@ -17,9 +17,8 @@
     background-color: rgba(34, 42, 131, 0.8);
     background-blend-mode: multiply;
     background-attachment: fixed;
-    margin: 10;
+    margin: auto;
     color:white;
-    
     
  }
 
@@ -35,30 +34,30 @@
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
-   
  }
 
  .photo-rounded{
-     display:flex;
+    display:flex;
     flex-direction: column;
     height: 125px;
     width: 125px;
     border-radius: 80px;
-    border-style: double;
-    background-color: greenyellow;
+    border-style: solid;
+    background-color: rgb(238 131 149);
+ 
     
  }
 
 
 
  .top-navigation-container{
-     display: flex;
-     flex: row;
-     justify-content: center;
-     margin: 20px;
-     padding: 5px;
-     font-weight: 700;
-     align-items: center;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+    font-weight: 700;
+    align-items: center;
      
  }
 
@@ -66,16 +65,18 @@
     padding: 5px;
     margin: 5px;
     background-color: greenyellow;
-    border-style:double;
-    border-radius: 80px;
+    border-radius: 10px;
+    /* border-style: solid;
+    border-color: black;  */
     list-style: none;
-    text-transform: uppercase;
-    font-size: 20;
+    text-transform:capitalize;
+    font-size: 18;
+    color: black;
  }
 
  .button-about:hover{
-    color:rgb(255, 255, 255);
-    background-color: rgb(240, 204, 210);
+    color:greenyellow;
+    background-color: #9653e2;
     
     
  }
@@ -88,21 +89,21 @@
 
 
 .main-title {
-    color: greenyellow;
+    color: white;
     display: flex;
     flex-direction: row;
     margin: 10px;
     padding: 5px;
     padding-bottom: 30px;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 700px;
     text-shadow: -2px 1px 7px rgb(238 131 149);
     text-transform: uppercase;
  }
 
  .menuDecoration{
-     background-color: cornflowerblue;
-     border-radius: 30px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
  }
 
  .about-style{
@@ -115,7 +116,7 @@
     color: greenyellow;
     padding: 20px; 
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 38px;
 }
 
 .about-paragraph{
@@ -149,20 +150,22 @@
 
 .skills-container{
     display: grid;
-    background-color: rgb(72 72 177 / 53%);
+    background-color: #9653e2;
     justify-items: center;
     text-align: center;
-    border-style: double;
+    border-style: solid;
     border-radius: 54px;
     font-size: 23px;
     padding: 10px;
     margin-bottom: 70px;
+    margin:20px;
     
 }
 
 .mySkills{
     font-weight: bold;
     letter-spacing: 2px;
+    margin: 10px;
 
 }
 
@@ -171,145 +174,194 @@
 }
 
 
-.project-decoration{
+/* .project-decoration{
     color:white;
     margin-left: 20px;
     margin-bottom: 70px;
+} */
+
+.linkRepos{
+   
+    color:white;
+    text-decoration: none;
+    list-style: none;
+
+
 }
 
-.projectos{
-    
-    list-style-type:decimal;
-    margin: 10px;
-    padding-left: 5px;
-    text-transform: uppercase;
+.projectos{ 
+    list-style-type:none;
     font-family:monospace;
-    color: white;
+   
 }
 
-
-
-
-
-
-            
-
-
- .ul-connect{
+.containerProjects{
     display:grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns:1fr 1fr;
+    row-gap: 30px;
+    background-color: #e973bd;
+    border-style: solid;
+    border-radius: 54px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    justify-items: stretch;
-    align-content: stretch;
-    justify-content: space-evenly;
+    margin: 20px;
+    margin-bottom: 130px;
+}
 
+.projTitle{
+    margin-top: 80px;
 }
 
  .color-strong{
-     color:rgb(238, 131, 149);
+    color:rgb(238, 131, 149);
  }
 
  .connectTitle{
-     margin: 5px;
-     padding: 10px;
+    margin: 5px;
+    padding: 10px;
  }
  
  .mediaConnect{
-     display:grid;
-     margin-right:20px;
-     padding-bottom:15px;
+    display:grid;
+    margin-right:20px;
+    padding-bottom:20px;
+    padding-top: 20px;
+    background-color:rgb(72 72 177 / 53%);
+    border-style: double;
+    border-radius: 23px;
  }
 
+.github{
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(238, 131, 149);
+}
 
-
-
-
-.title-leavemessage{ 
-    font-style: oblique; 
-    text-align:left;
-    margin-top: -30px;
-   
- }
-
-.message-section{
-      margin:30px;
-      width:auto; 
-      color:greenyellow; 
-      
-    
-  }
-
-.mensajes{
-    padding-top:70px;
-    
+.github:hover, .github:focus{
+    color:honeydew;
 }
 
 
-.h2LAM .comingMsg{
-    margin-top: 10px;
-  
-}
 
-.comingMsg{
-    margin-left: 15px;
-    padding-top:30px;
-    padding-bottom:10px;
-   
-}
 
-.messageArrived{
-    font-style: oblique;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+.msgContainer{
+    display:flex;
+    margin:20px;
+    width: auto;
+    background: #aaf545;
+    border-style: solid;
+    border-color: white;
+    border-radius: 40px;
     flex-direction: column;
+    padding: 20px;
+    color: #9653e2;
 }
 
-.section2{
-    margin: 10px;
-    text-align:center;
-   
+.leavemsg{
+    color:greenyellow;
+    text-align: center;
 }
 
-.listMsg{
-    list-style: none;
-    text-align: left;
-    color:white;
-    
+.label-msg{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
- .btn:hover{
-      background: rgb(238, 131, 149);
-      color: black;
-      margin:5px;
+.input-msg{
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 30px;
+}
+
+.textArea{
+    width: 400px;
+    height: 200px;
+    }
+
+
+
+.btn{
+    background: #9653e2;
+    color: white;
+    border-radius: 30px;
+    border-style: double;
+    border-color: white;
+    padding: 5px;
+    margin:5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
+    cursor: pointer;
+}
+ .btn:hover, .btn:focus{
+    background: #9653e2;
+    background-color: #56288b;
+    color: white;
+    color: white;
+    margin:5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: oblique;
   }
 
 
 .buttonRemove{
-    background-color:rgb(238, 131, 149);
+    background-color:rgb(252, 247, 248);
     border-radius: 18px;
     padding:5px;
-
+    cursor: pointer;
     
 }
 
       
 .footerInfo{
-    display:grid;
-    color: rgb(247 247 244);
+    display:flex;
+    background-color: #9653e2;
+    color: black;
     font-size: 15px;
-    justify-content: space-evenly;
     text-align: center;
-    margin-top: 120px;
-    
+    margin-top: 150px;
+    align-items: center;
+    justify-content: space-around;
+  
 }
 
+.copyrights{
+    display:flex;
+    margin-left: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photogit:hover, .photogit:focus{
+    width: 30px;
+    height: 30px;
+    color:greenyellow;
+}
+
+.gitContainer{
+    display:flex;
+    margin:5px -230px 5px 5px;
+   
+}
+
+.ion-icon{
+    color:rgb(0, 0, 0);
+}
+
+.ion-icon:hover, .ion-icon:focus{
+    color:greenyellow;
+}
 
 
   /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     .main-title {
         color: greenyellow;
         display: flex;
@@ -322,9 +374,19 @@
         text-shadow: 0 3px 0 rgb(0 0 0 / 40%);  
     }
 }
+
+@media only screen and (max-width:650px){
+    .top-navigation-container  {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-gap: 15px;
+        text-align: center;
+    }
+}
   
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     .experience-items{
         display:flex;
         justify-content:center;
@@ -332,20 +394,25 @@
         margin:20px;
         }
     }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .other-headers { 
         font-size: 25px;
                 
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     .content { font-size: 20px;
-                color: rgb(247, 247, 244);
+        color: rgb(247, 247, 244);
     
     }
   }
 
-  
 
-  
+  @media only screen and (max-width: 650px) {
+    .footerInfo { 
+        display: flex;
+        justify-content: space-between;
+    
+    }
+  }
